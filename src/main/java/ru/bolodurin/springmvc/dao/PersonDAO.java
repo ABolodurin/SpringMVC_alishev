@@ -31,4 +31,9 @@ public class PersonDAO {
                 .findAny()
                 .orElse(new Person(0, "Person not found"));
     }
+
+    public void save(Person person){
+        person.setId(++PEOPLE_COUNT);
+        people.add(person);
+    }
 }
