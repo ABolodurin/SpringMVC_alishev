@@ -1,6 +1,7 @@
 package ru.bolodurin.springmvc.models;
 
-import jakarta.validation.constraints.*;
+
+import javax.validation.constraints.*;
 
 public class Person {
     private int id;
